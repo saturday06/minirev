@@ -1,0 +1,11 @@
+[package]
+name = "minirev"
+version = "0.1.0"
+authors = ["Isamu Mogi <isamu@leafytree.jp>"]
+
+[dependencies]
+futures = "0.1"
+tokio-core = "0.1"
+rand = "*"
+hyper = "0.8"
+url = "1"

@@ -1,0 +1,7 @@
+*.iml
+.idea/
+/minirev-go/minirev
+/minirev-go/minirev_pool
+/minirev-haskell/.stack-work/
+/minirev-haskell/out/
+/minirev-rust/target/
