@@ -1,11 +1,10 @@
 [package]
-name = "minirev"
+name = "revproxy"
 version = "0.1.0"
 authors = ["Isamu Mogi <isamu@leafytree.jp>"]
 
 [dependencies]
-futures = "0.1"
-tokio-core = "0.1"
-rand = "*"
-hyper = "0.8"
-url = "1"
+futures = "*"
+hyper = "*"
+pretty_env_logger = "*"
+tokio-core = "*"
