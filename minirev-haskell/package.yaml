@@ -1,0 +1,27 @@
+name: minirev
+version: '0.1.0.0'
+ghc-options: -threaded -rtsopts
+dependencies:
+  - base
+  - blaze-builder
+  - bytestring
+  - conduit-extra
+  - http-client
+  - http-reverse-proxy
+  - http-types
+  - streaming-commons
+  - wai
+  - wai-extra
+  - warp
+source-dirs: src
+executables:
+  minirev-no-cunduit:
+    main: NoConduitMain.hs
+  minirev:
+    main: Main.hs
+  minirev-raw-buf2kb:
+    main: RawBuf2kbMain.hs
+  minirev-wai:
+    main: WaiMain.hs
+  minirev-raw:
+    main: RawMain.hs

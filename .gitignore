@@ -4,4 +4,5 @@
 /minirev-go/minirev_pool
 /minirev-haskell/.stack-work/
 /minirev-haskell/out/
+/minirev-haskell/*.cabal
 /minirev-rust/target/
