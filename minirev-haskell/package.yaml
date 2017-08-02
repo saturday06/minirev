@@ -9,6 +9,7 @@ dependencies:
   - http-client
   - http-reverse-proxy
   - http-types
+  - network
   - streaming-commons
   - wai
   - wai-extra
@@ -23,5 +24,7 @@ executables:
     main: RawBuf2kbMain.hs
   minirev-wai:
     main: WaiMain.hs
+#  minirev-wai-buf32kb:
+#    main: WaiBuf32kbMain.hs
   minirev-raw:
     main: RawMain.hs
