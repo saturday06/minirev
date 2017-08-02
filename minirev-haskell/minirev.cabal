@@ -3,6 +3,23 @@ version:             0.1.0.0
 build-type:          Simple
 cabal-version:       >=1.24
 
+executable minirev-no-cunduit
+  hs-source-dirs:      src
+  main-is:             NoConduitMain.hs
+  ghc-options:         -threaded -rtsopts
+  build-depends:       base
+                     , bytestring
+                     , conduit-extra
+                     , http-client
+                     , http-reverse-proxy
+                     , http-types
+                     , wai
+                     , wai-extra
+                     , warp
+                     , streaming-commons
+                     , blaze-builder
+  default-language:    Haskell2010
+
 executable minirev
   hs-source-dirs:      src
   main-is:             Main.hs
