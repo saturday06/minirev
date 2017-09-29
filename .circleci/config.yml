@@ -1,0 +1,23 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby
+    parallelism: 2
+    steps:
+      - checkout
+      - run: echo 1
+
+  test:
+    docker:
+      - image: circleci/ruby
+    steps:
+      - checkout
+      - run: echo 1
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+      - test
